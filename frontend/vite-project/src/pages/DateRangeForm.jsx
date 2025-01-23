@@ -16,7 +16,7 @@ const DateRangeForm = () => {
 
     try {
       // Backend'e POST isteği gönder
-      const response = await axios.post("http://localhost:8080/api/dates", data);
+      const response = await axios.post("/api/dates", data);
       alert("Başarılı: " + response.data.message);
     } catch (error) {
       console.error("Hata:", error);
