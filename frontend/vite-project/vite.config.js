@@ -10,7 +10,7 @@ export default defineConfig({
         target: 'http://localhost:8080',  // Host bilgisayarın localhost'una erişim
         changeOrigin: true,
         secure: false
-      }
+      }      
     }
   }
 })

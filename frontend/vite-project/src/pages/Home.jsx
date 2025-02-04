@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const DateRangeForm = () => {
+const Home = () => {
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
+  const [name, setName] = useState("Sezgin");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -12,6 +13,7 @@ const DateRangeForm = () => {
     const data = {
       startDate: startDate,
       endDate: endDate,
+      name: name
     };
 
     try {
@@ -74,4 +76,4 @@ const DateRangeForm = () => {
   );
 };
 
-export default DateRangeForm;
+export default Home;
